@@ -61,9 +61,7 @@ const fillDailyForecast = (data) => {
     const res = [];
     data.days.forEach((day, idx) => {
         if (idx > globalConfig.forecastMaxDays - 1) return;
-
         let dayname = getDayName(day.datetime);
-
         const iconText = day.icon;
         const conditions = day.conditions;
         const minMaxTemp = `${day.tempmax}/${day.tempmin}`;
