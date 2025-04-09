@@ -1,0 +1,19 @@
+@import 'normalize.css';
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgba(86, 200, 37, 0.562);
+
+  #app {
+      background-color: rgb(21, 156, 156);
+      height: 300px;
+      width: 70%;
+      border-radius: 12px;
+      border: 2px solid black;
+    }
+}
