@@ -4,12 +4,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Weather App</title>
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon.svg">
   <script defer type="module" src="/src/js/main.js"></script>
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div class="widget controls"></div>
+    <div class="widget input-container">
+      <input class="text-main" type="text">
+      <button class="update-weather">
+        <img src="/img/search_city.svg" alt="Search button image" width="50px" height="50px">
+      </button>
+    </div>
+    <div class="main">
+      <div class="info-container">
+        <h2 class="city-name text-main"></h2>
+        <p class="conditions text-sub"></p>
+        <h1 class="temp text-main"></h1>
+      </div>
+      <div class="image-container">
+        <img src="/img/sun.svg" height="250px" width="250px" alt="Weather icon">
+      </div>
+    </div>
+    <div class=" widget today-forecast">
+    </div>
+    <div class="widget air-conditions"></div>
+    <div class="widget daily-sidebar"></div>
+  </div>
 </body>
 
 </html>

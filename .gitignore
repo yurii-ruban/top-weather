@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# test files
+src/js/data.txt
+src/js/test.json

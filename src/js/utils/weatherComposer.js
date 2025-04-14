@@ -65,6 +65,7 @@ const fillDailyForecast = (data) => {
         const iconText = day.icon;
         const conditions = day.conditions;
         const minMaxTemp = `${day.tempmax}/${day.tempmin}`;
+
         res.push({
             dayname,
             iconText,
