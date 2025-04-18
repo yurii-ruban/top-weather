@@ -41,12 +41,29 @@ const fillAirConditions = function (data) {
     uvIndex.innerText = data.airConditions.uvindex;
 }
 
+const fillWeekForecast = function (data) {
+    const forecastContainer = document.querySelector('.daily-forecast-container');
+    Array.from(forecastContainer.children).forEach((item, index) => {
+        const dayName = item.querySelector('.day-name');
+        const icon = item.querySelector('img');
+        const condition = item.querySelector('span');
+        const temp = item.querySelector('.temp');
+
+        const day = data.dailyForecast[index].dayname;
+        dayName.innerText = day === 'Today' ? 'Today' : day.slice(0, 3);
+        icon.src = globalConfig.getImagePath(data.dailyForecast[index].iconText);
+        condition.innerText = data.dailyForecast[index].conditions;
+        temp.innerText = globalConfig.convertTemperature(data.dailyForecast[index].minMaxTemp) + globalConfig.temp || error;
+    });
+
+}
+
 const filler = {
     fillInfo: function (data) {
         fillMainSection(data);
         fillTodaysForecast(data);
         fillAirConditions(data);
-        // fillWeekForecast(data);
+        fillWeekForecast(data);
     }
 };
 

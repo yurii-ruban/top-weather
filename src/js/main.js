@@ -16,9 +16,14 @@ const inputProcessor = async function (event) {
     }
 }
 
+const inputButton = document.querySelector('.update-weather');
 const input = document.querySelector('input');
 input.value = 'Kyiv';
+input.addEventListener('keyup', (pressEvent) => {
+    const code = (pressEvent.keyCode ? pressEvent.keyCode : pressEvent.which);
+    if (code === 13) inputButton.dispatchEvent(new Event('click'));
+
+});
 document.addEventListener('DOMContentLoaded', inputProcessor);
 
-const inputButton = document.querySelector('.update-weather');
 inputButton.addEventListener('click', inputProcessor);
