@@ -10,7 +10,7 @@ https://yurii-ruban.github.io/top-weather
 
 - HTML
   - Default boilerplate code
-  - Custom fonts
+  - Import fonts
 - CSS
   - Basic styling
   - Flexbox layout
@@ -33,4 +33,4 @@ The task is to just create simple weather App by following [these](https://www.t
 
 ## Screenshot
 
-![Screenshot]()
+![Screenshot](./public/img/screenshot.png)
