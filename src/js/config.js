@@ -22,7 +22,7 @@ const CONFIG = {
     wind: WINDSPEED.ms,
     humidity: HUMIDITY.percent,
     forecastMaxDays: 7,
-    imageFolder: '/img/weather',
+    imageFolder: '../../public/img/weather',
     imageFormat: 'svg',
     timeFormat: TIMEFORMAT.h12,
 
@@ -37,7 +37,7 @@ const CONFIG = {
     },
 
     getImagePath: function (iconName) {
-        return `${this.imageFolder}/${iconName}.${this.imageFormat}`;
+        return new URL(`${this.imageFolder}/${iconName}.${this.imageFormat}`, import.meta.url).href;
     },
 
     getTimeString: function (time) {
