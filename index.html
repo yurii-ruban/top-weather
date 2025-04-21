@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="icon" type="image/x-icon" href="/top-weather/favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/top-weather/assets/index-BNqDa5Vu.js"></script>
+  <link rel="stylesheet" crossorigin href="/top-weather/assets/index-BfNEEm6F.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="widget controls">
+      <p class="controls-header text-sub">CONTROLS (Currently not available)</p>
+      <div class="controls-container">
+        <div class="control-item"><button><img src="/top-weather/img/controls/menu.svg" alt="" width="70px" height="70px"></button>
+        </div>
+        <div class="control-item"><button><img src="/top-weather/img/controls/home.svg" alt="" width="70px" height="70px"></button>
+        </div>
+        <div class="control-item"><button><img src="/top-weather/img/controls/fav.svg" alt="" width="70px" height="70px"></button>
+        </div>
+        <div class="control-item"><button><img src="/top-weather/img/controls/bolt.svg" alt="" width="70px" height="70px"></button>
+        </div>
+        <div class="control-item"><button><img src="/top-weather/img/controls/close.svg" alt="" width="70px" height="70px"></button>
+        </div>
+      </div>
+    </div>
+    <div class="widget input-container">
+      <input class="text-main" type="text">
+      <button class="update-weather">
+        <img src="/top-weather/img/search_city.svg" alt="Search button image" width="50px" height="50px">
+      </button>
+    </div>
+    <div class="main">
+      <div class="info-container">
+        <h2 class="city-name text-main"></h2>
+        <p class="conditions text-sub"></p>
+        <h1 class="temp text-main"></h1>
+      </div>
+      <div class="image-container">
+        <img src="/img/sun.svg" height="250px" width="250px" alt="Weather icon">
+      </div>
+    </div>
+    <div class=" widget today-forecast">
+      <p class="forecast-header text-sub">TODAY'S FORECAST</p>
+      <div class="forecast-container">
+        <div class="forecast-item">
+          <p class="text-sub time-text"></p>
+          <img src="" alt="" width="60px" height="60px" class="forecast-icon">
+          <p class="temp text-main"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="text-sub time-text"></p>
+          <img src="" alt="" width="60px" height="60px" class="forecast-icon">
+          <p class="temp text-main"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="text-sub time-text"></p>
+          <img src="" alt="" width="60px" height="60px" class="forecast-icon">
+          <p class="temp text-main"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="text-sub time-text"></p>
+          <img src="" alt="" width="60px" height="60px" class="forecast-icon">
+          <p class="temp text-main"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="text-sub time-text"></p>
+          <img src="" alt="" width="60px" height="60px" class="forecast-icon">
+          <p class="temp text-main"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="text-sub time-text"></p>
+          <img src="" alt="" width="60px" height="60px" class="forecast-icon">
+          <p class="temp text-main"></p>
+        </div>
+      </div>
+    </div>
+    <div class="widget air-conditions">
+      <p class="conditions-header text-sub">AIR CONDITIONS</p>
+      <div class="conditions-container">
+        <div class="conditions-item">
+          <div class="item-title">
+            <img src="/top-weather/img/conditions/thermostat.svg" width="24px" height="24px" alt="" class="conditions-img">
+            <p class="text-sub condition-name">Real Feel</p>
+          </div>
+          <p class="text-main real-feel"></p>
+
+        </div>
+        <div class="conditions-item">
+          <div class="item-title">
+            <img src="/top-weather/img/conditions/raindrop.svg" width="24px" height="24px" alt="" class="conditions-img">
+            <p class="text-sub condition-name">Hummidity</p>
+          </div>
+          <p class="text-main hummidity"></p>
+
+        </div>
+        <div class="conditions-item">
+          <div class="item-title">
+            <img src="/top-weather/img/conditions/wind.svg" width="24px" height="24px" alt="" class="conditions-img">
+            <p class="text-sub condition-name">Wind</p>
+          </div>
+          <p class="text-main wind"></p>
+
+        </div>
+        <div class="conditions-item">
+          <div class="item-title">
+            <img src="/top-weather/img/conditions/uvindex.svg" width="24px" height="24px" alt="" class="conditions-img">
+            <p class="text-sub condition-name">UV Index</p>
+          </div>
+          <p class="text-main uv-index"></p>
+        </div>
+      </div>
+    </div>
+    <div class="widget daily-sidebar">
+      <p class="forecast-header text-sub">7-DAY FORECAST</p>
+      <div class="daily-forecast-container">
+        <div class="forecast-item">
+          <p class="day-name text-sub"></p>
+          <div class="condition-container"><img src="" width="60px" height="60px" alt="icon description"><span
+              class="text-main"></span>
+          </div>
+          <p class="temp text-sub"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="day-name text-sub"></p>
+          <div class="condition-container"><img src="" width="60px" height="60px" alt="icon description"><span
+              class="text-main"></span>
+          </div>
+          <p class="temp text-sub"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="day-name text-sub"></p>
+          <div class="condition-container"><img src="" width="60px" height="60px" alt="icon description"><span
+              class="text-main"></span>
+          </div>
+          <p class="temp text-sub"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="day-name text-sub"></p>
+          <div class="condition-container"><img src="" width="60px" height="60px" alt="icon description"><span
+              class="text-main"></span>
+          </div>
+          <p class="temp text-sub"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="day-name text-sub"></p>
+          <div class="condition-container"><img src="" width="60px" height="60px" alt="icon description"><span
+              class="text-main"></span>
+          </div>
+          <p class="temp text-sub"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="day-name text-sub"></p>
+          <div class="condition-container"><img src="" width="60px" height="60px" alt="icon description"><span
+              class="text-main"></span>
+          </div>
+          <p class="temp text-sub"></p>
+        </div>
+        <div class="forecast-item">
+          <p class="day-name text-sub"></p>
+          <div class="condition-container"><img src="" width="60px" height="60px" alt="icon description"><span
+              class="text-main"></span>
+          </div>
+          <p class="temp text-sub"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
